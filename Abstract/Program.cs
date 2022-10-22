@@ -2,9 +2,11 @@
 
 using Abstract.Shape;
 
-Circle c = new Circle(10);
-Console.WriteLine($"circle area:{c.GetArea()}");
-c.PrintInfo();
+Circle c1 = new Circle(10);
+Circle c2 = new Circle(10);
+Console.WriteLine($"circle area:{c1.GetArea()}");
+c1.PrintInfo();
+
 
 Console.WriteLine();
 
