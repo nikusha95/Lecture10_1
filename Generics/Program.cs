@@ -39,6 +39,43 @@ List<double> dList = new List<double>
 Console.WriteLine("Custom Generic");
 GenericArray<int> genericArray1 = new GenericArray<int>(10);
 
-genericArray1.AddElement(20,3);
-genericArray1.AddElement(12,4);
+genericArray1.AddElement(20, 3);
+genericArray1.AddElement(12, 4);
 Console.WriteLine(genericArray1.GetElement(3));
+
+//Stack
+Console.WriteLine("Stack");
+Stack<int> stack = new Stack<int>();
+
+stack.Push(10); //10
+stack.Push(20); //20,10
+stack.Push(30); //30,20,10
+
+while (stack.Count != 0) //FI LO
+{
+    int el = stack.Peek();
+    Console.WriteLine(el);
+    stack.Pop();
+    //30,20,10
+    //20,10
+    //10
+    //
+}
+//30
+//20
+//10
+
+//queue
+Console.WriteLine("QUEUE");
+Queue<int> queue = new Queue<int>(); //FI FO
+
+queue.Enqueue(10);
+queue.Enqueue(20);
+queue.Enqueue(30);
+
+while (queue.Count != 0)
+{
+    int el = queue.Peek();
+    Console.WriteLine(el);
+    queue.Dequeue();
+}
